@@ -5,8 +5,7 @@
 ---
 
 ## Project Overview  
-This project analyzes the **Adult Income Dataset** from the UCI Machine Learning Repository to evaluate data quality issues and identify fairness and bias concerns in preparation for machine learning classification tasks.  
-The dataset contains **32,537 records** describing demographic and employment features such as age, sex, race, education, workclass, and income level.
+The Adult Income dataset (32,537 rows) from the UCI Machine Learning Repository is examined for data quality in this study. The dataset's demographic, employment, and income-related characteristics are used to forecast whether a person makes more than $50,000 a year. Because model accuracy, fairness, and ethical reliability are directly impacted by missing values, discrepancies, and demographic imbalances, data quality is essential. In accordance with course principles from Weeks 10 (ETL and Data Warehousing) and 11 (Data Mining, Bias, and Fairness), this report assesses three fundamental aspects of data quality: completeness, validity/consistency, and fairness/bias. 
 
 This work corresponds to **Option 2: Data Mining Quality & Bias Analysis** from the COMP 331 Final Project guidelines.
 
@@ -16,18 +15,15 @@ This work corresponds to **Option 2: Data Mining Quality & Bias Analysis** from 
 This project evaluates data quality using three major dimensions:
 
 ### 1. **Completeness**  
-Identifying missing values (e.g., “?” placeholders) and measuring how incomplete data affects analysis quality.
-
+Three properties have significant gaps, according to a search for missing values and placeholder "?" symbols: 
 ### 2. **Validity & Consistency**  
-Checking whether:  
-- Numeric values fall within logical ranges  
-- Categories follow consistent formatting  
-- Labels match expected patterns  
-(Aligned with Week 10 concepts: ETL Cleaning & Standardization)
+
+Income labels (<=50K, >50K) were consistent, and numerical ranges (e.g., age 18–90, no negatives) were valid. Although there were no structural irregularities discovered, standardization—such as removing spaces and using consistent formatting—is still required to guarantee long-term data integrity. These actions are in line with ETL standardization procedures. 
 
 ### 3. **Fairness & Bias**  
-Measuring demographic imbalance and income inequality across sensitive groups:  
-- **Sex** (Male vs Female)  
+A demographic analysis revealed significant sampling bias and historical bias, directly tied to Week 11 concepts. -
+
+  **Sex** (Male vs Female)  
 - **Race** (White, Black, Asian-Pac-Islander, etc.)
 
 This connects to course topics from **Week 11: Bias, Fairness, Data Mining Ethics**.
@@ -75,15 +71,6 @@ COMP331-Final-Project/
 │ └── race_bias_table.csv
 │
 └── README.md 
-
----
-
-## Notes  
-- This project uses **Excel** for analysis (no coding).  
-- CSV output files in the `results/` folder contain the bias summary tables.  
-- The final PDF report includes the full discussion, analysis, and recommendations.
-
----
 
 ## Status  
 This repository contains all required components for the COMP331 Final Project.  
