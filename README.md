@@ -23,7 +23,7 @@ Income labels (<=50K, >50K) were consistent, and numerical ranges (e.g., age 18â
 ### 3. **Fairness & Bias**  
 A demographic analysis revealed significant sampling bias and historical bias, directly tied to Week 11 concepts. -
 
-  **Sex** (Male vs Female)  
+- **Sex** (Male vs Female)  
 - **Race** (White, Black, Asian-Pac-Islander, etc.)
 
 This connects to course topics from **Week 11: Bias, Fairness, Data Mining Ethics**.
